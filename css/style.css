@@ -1,0 +1,125 @@
+* {
+    font-family: 'Cairo', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('./../img/bg.png');
+}
+
+.lessons ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.lessons ul .img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c70318;
+    border: 5px solid #ffc500;
+    outline: 5px solid #c70318;
+    cursor: pointer;
+
+}
+.lessons ul img {
+    width: 65%;
+    height: 65%;
+    object-fit: contain;
+}
+.lessons ul li .text {
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.35rem;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.lessons ul li .text h1:first-child {
+    font-weight: 600;
+    margin: 0;
+}
+.lessons ul li .text h1:last-child {
+    font-weight: 400;
+    margin: 0;
+}
+
+.pop-up-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00000059;
+    backdrop-filter: blur(9px);
+    display: none;
+}
+
+.pop-up-container .pop-up{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    min-width: 250px;
+    position: relative;
+    padding-top: 50px;
+}
+
+.pop-up >i{
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.pop-up-container ol {
+    margin: 0;
+    padding: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pop-up-container .pop-up ol li{
+    padding: 0%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.pop-up p {
+    margin: 0;
+    font-size: 24px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.pop-up .btn {
+    width: 45px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-up .btn i {
+    font-size: 20px;
+}
