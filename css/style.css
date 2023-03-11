@@ -85,6 +85,13 @@ body {
     font-size: 25px;
     cursor: pointer;
 }
+.pop-up >h4{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    font-size: 25px;
+    cursor: pointer;
+}
 
 .pop-up-container ol {
     margin: 0;
